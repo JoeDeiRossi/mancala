@@ -1,4 +1,5 @@
 import React from 'react';
+import Board from './components/Board';
 import Pit from './components/Pit';
 import logo from './logo.svg';
 import './App.css';
