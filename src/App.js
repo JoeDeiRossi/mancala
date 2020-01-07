@@ -1,12 +1,12 @@
 import React from 'react';
-import Pit from './components/pit';
+import Pit from './components/Pit';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Pit />
+      {/* Stuff goes here */}
     </div>
   );
 }
