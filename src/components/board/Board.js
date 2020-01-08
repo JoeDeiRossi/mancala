@@ -1,8 +1,11 @@
 import React from 'react';
+import './board.css';
 
 function Board() {
   return (
-    <h1>Board Component!</h1>
+    <div className='board'>
+      content
+    </div>
   )
 }
 

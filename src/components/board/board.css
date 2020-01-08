@@ -1,0 +1,8 @@
+.board {
+  background-color: red;
+  width: 60%;
+  height: 50vh;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+}
