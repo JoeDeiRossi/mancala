@@ -1,8 +1,13 @@
 import React from 'react';
+import './pit.css';
 
 function Pit() {
   return (
-    <p>Good Evening</p>
+    <div className="pitContainer">
+      <div className="innerPit">
+        
+      </div>
+    </div>
   )
 }
 
