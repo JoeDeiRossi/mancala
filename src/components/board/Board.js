@@ -27,6 +27,7 @@ function Board() {
           <Pit />
         </div>
       </div>
+      <Store />
     </div>
   )
 }
