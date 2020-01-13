@@ -1,16 +1,31 @@
 import React from 'react';
 import './pit.css';
 
-function Pit() {
-  const [count, setCount] = React.useState(4);
+class Pit extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <div className="pit">
-      <div className="innerPit" onClick={() => console.log('pit clicked')}>
-        {count}
+    this.state = {
+      count: 4
+    }
+  }
+
+  selectPit = () => {
+    console.log(`pit ${this.props.pitId} clicked`);
+    this.setState({
+      count: 0
+    })
+  }
+
+  render() {
+    return (
+      <div className="pit">
+        <div className="innerPit" onClick={this.selectPit}>
+          {this.state.count}
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Pit;

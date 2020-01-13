@@ -4,27 +4,17 @@ import Pit from '../pit/Pit';
 import './board.css';
 
 function Board() {
+  const pitNumbers = [12, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6];
+  const pits = pitNumbers.map(number => 
+    <Pit key={number} pitId={number} />
+  );
+
   return (
     <div className='board'>
       <Store />
-      <div className="pitsContainer player2">
+      <div className="pitsContainer">
         <div className="flexContainer">
-          <Pit />
-          <Pit />
-          <Pit />
-          <Pit />
-          <Pit />
-          <Pit />
-        </div>
-      </div>
-      <div className="pitsContainer player1">
-        <div className="flexContainer">
-          <Pit />
-          <Pit />
-          <Pit />
-          <Pit />
-          <Pit />
-          <Pit />
+          {pits}
         </div>
       </div>
       <Store />
