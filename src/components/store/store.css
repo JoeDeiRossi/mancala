@@ -1,12 +1,11 @@
 .storeContainer {
-  background-color: blue;
   width: 12.5%;
   height: 100%;
   display: inline-block;
 }
 
 .innerStore {
-  background-color: green;
+  background-color: blue;
   height: 80%;
   width: 80%;
   position: relative;

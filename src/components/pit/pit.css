@@ -1,16 +1,16 @@
-.pitContainer {
-  background-color: orange;
-  width: 12.5%;
-  height: 50%;
+.pit {
+  width: 16.7%;
+  height: 100%;
   display: inline-block;
 }
 
 .innerPit {
-  background-color: purple;
+  background-color: blue;
   height: 80%;
   width: 80%;
   position: relative;
   left: 10%;
   top: 10%;
   border-radius: 50%;
+  text-align: center;
 }
