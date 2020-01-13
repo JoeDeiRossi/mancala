@@ -9,9 +9,8 @@
 
 .pitsContainer {
   display: inline-block;
-  height: 50%;
+  height: 100%;
   width: 75%;
-  /* position: relative; */
 }
 
 .player2 {
