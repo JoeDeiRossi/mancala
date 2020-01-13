@@ -7,6 +7,26 @@ function Board() {
   return (
     <div className='board'>
       <Store />
+      <div className="pitsContainer player2">
+        <div className="flexContainer">
+          <Pit />
+          <Pit />
+          <Pit />
+          <Pit />
+          <Pit />
+          <Pit />
+        </div>
+      </div>
+      <div className="pitsContainer player1">
+        <div className="flexContainer">
+          <Pit />
+          <Pit />
+          <Pit />
+          <Pit />
+          <Pit />
+          <Pit />
+        </div>
+      </div>
     </div>
   )
 }

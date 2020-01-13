@@ -3,7 +3,7 @@ import './pit.css';
 
 function Pit() {
   return (
-    <div className="pitContainer">
+    <div className="pit">
       <div className="innerPit">
         
       </div>
