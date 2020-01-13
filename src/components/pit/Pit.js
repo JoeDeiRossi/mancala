@@ -12,6 +12,7 @@ class Pit extends React.Component {
 
   selectPit = () => {
     console.log('pit clicked');
+    console.log(this);
   }
 
   render() {

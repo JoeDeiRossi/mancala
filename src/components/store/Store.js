@@ -1,16 +1,24 @@
 import React from 'react';
 import './store.css';
 
-function Store() {
-  const [count, setCount] = React.useState(0);
+class Store extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <div className='storeContainer'>
-      <div className='innerStore'>
-        {count}
+    this.state = {
+      count: 0
+    }
+  }
+
+  render() {
+    return (
+      <div className='storeContainer'>
+        <div className='innerStore'>
+          {this.state.count}
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Store;
