@@ -11,8 +11,10 @@ class Pit extends React.Component {
   }
 
   selectPit = () => {
-    console.log('pit clicked');
-    console.log(this);
+    console.log(`pit ${this.props.pitId} clicked`);
+    this.setState({
+      count: 0
+    })
   }
 
   render() {

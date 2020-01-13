@@ -8,22 +8,15 @@ function Board() {
     'flexDirection': 'row-reverse'
   }
 
-  const pitNumbers = [6, 5, 4, 3, 2, 1];
-  const pits = pitNumbers.map((number) =>
-    <Pit key={number}>
-      {number}
-    </Pit>
+  const pitNumbers = [12, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6];
+  const pits = pitNumbers.map(number => 
+    <Pit key={number} pitId={number} />
   );
 
   return (
     <div className='board'>
       <Store />
-      <div className="pitsContainer player2">
-        <div className="flexContainer" style={p2Style}>
-          {pits}
-        </div>
-      </div>
-      <div className="pitsContainer player1">
+      <div className="pitsContainer">
         <div className="flexContainer">
           {pits}
         </div>
